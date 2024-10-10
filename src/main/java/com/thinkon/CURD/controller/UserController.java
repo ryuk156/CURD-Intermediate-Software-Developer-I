@@ -45,7 +45,7 @@ public class UserController {
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         try{
             Optional<User> user = userRepo.findById(id);
-            if(user.isPresent()) {
+            if(!user.isPresent()) {
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
             return new ResponseEntity<>(user.get(), HttpStatus.OK);
