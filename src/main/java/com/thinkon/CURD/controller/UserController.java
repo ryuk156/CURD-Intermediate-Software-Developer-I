@@ -41,7 +41,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/users/{id}")
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         try{
             Optional<User> user = userRepo.findById(id);
@@ -54,14 +54,14 @@ public class UserController {
         }
     }
 
-    @PostMapping("/user")
+    @PostMapping("/users")
     public ResponseEntity<User> addUser(@RequestBody User user) {
         User userObject = userRepo.save(user);
 
       return new ResponseEntity<>(userObject, HttpStatus.CREATED);
     }
 
-    @PutMapping("/user/{id}")
+    @PutMapping("/users/{id}")
     public ResponseEntity<User> updateUserById( @PathVariable Long id, @RequestBody User updatedUserData) {
         Optional<User> existingUserOptional = userRepo.findById(id);
     
@@ -86,7 +86,7 @@ public class UserController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @DeleteMapping("/user/{id}")
+    @DeleteMapping("/users/{id}")
     public ResponseEntity<HttpStatus> deleteUserById(@PathVariable Long id) {
         userRepo.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);

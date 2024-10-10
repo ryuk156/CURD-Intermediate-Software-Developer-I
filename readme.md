@@ -49,7 +49,7 @@ The application will start on the default port 8080.
 ### API Endpoints
 
 #### 1. Create a new Use
-- Endpoint: POST /user
+- Endpoint: POST /users
 - Request Body:
  
 ```
