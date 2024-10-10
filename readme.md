@@ -30,12 +30,10 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 ```
 git clone https://github.com/ryuk156/CURD-Intermediate-Software-Developer-I.git
-
 ```
 2. Navigate to the project directory:
 ```
 cd CURD-Intermediate-Software-Developer-I
-
 ```
 3. Build the Project
 ```
@@ -87,7 +85,6 @@ The application will start on the default port 8080.
   "email": "updated.email@example.com",
   "phonenumber": "987-654-3210"
 }
-
 ```
 
 - Response: 
