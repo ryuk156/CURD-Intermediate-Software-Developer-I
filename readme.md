@@ -22,6 +22,7 @@
 - Spring Data JPA
 - H2 Database (file-based for persistent data)
 - Maven (for build and dependency management)
+- Lombok
 
 ### Setup & Installation
 
