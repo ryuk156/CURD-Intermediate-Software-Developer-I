@@ -38,7 +38,7 @@ cd CURD-Intermediate-Software-Developer-I
 ```
 3. Build the Project
 ```
-mvn spring-boot:run
+mvn clean install
 ```
 4. Run the application
 ```
